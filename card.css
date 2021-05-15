@@ -1,0 +1,107 @@
+html{
+  height: 100%   /* you define the size of the playground, only for this example useful, scrolling situations = nono */
+}
+
+body {
+  height: 100%; /* you define the size of the playground, only for this example useful, scrolling situations = nono */
+  font-family: 'Roboto', sans-serif;
+  display:flex;
+  justify-content: center;  /* horizontal */
+  align-items: center;   /* vertical*/
+}
+
+.card {
+  /* mimicks a quartet card game card size JS */
+  width: 430px;
+  height: 665px;
+  
+  padding: 10px; 
+  /* background-color just here to make the card visible, can be changed JS */
+  background-color: #ea2081;
+
+  /* makes the appearance look more like a card, up to you to change JS*/
+  border-radius: 10px;
+}
+
+.cardtitle{
+  background-color: rgb(253, 253, 253);
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 24px;
+  text-align: center;
+}
+
+.cardbase {
+  height: 100%;
+  background-color: cornsilk;
+  border-radius: 50px;
+  overflow: hidden;  /*  "mask" so the code before isn't overwritten by cardbase */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.dots {
+  background-color: aquamarine;
+  font-size:  50px;
+  font-weight: 300;
+  text-align: center;
+}
+.cardpicbox{
+  padding: 24px;
+  background-image: url("img/Vertical.jpeg");
+  background-size: cover; /* background as big as cardpicbox */
+  background-position: 50% 50%; /* scale x / y */ 
+  flex-grow: 1;
+  
+  
+}
+.cardpic {  /* how can i display the image as img because of screenreader */
+  max-height: 30%; /* so the croping will be possible or for now "platzhalter" */
+  object-fit: scale-down ;
+
+}
+
+/* .cardpic img {
+  display: block;
+  max-height: 100%;
+}
+*/
+.infobox{
+  background-color: rgb(117, 51, 51);
+  font-size:  20px;
+  font-weight: 100;
+  padding: 24px;
+  background-image: url("img/Vertical.jpeg");
+  background-size: cover; 
+  background-position: 50% 50%; 
+}
+.infotable {
+  padding: 24px;
+  background-color: white;
+}
+.infotable table { /* table is seen as a html tag like "body" or "HTML" */
+  width: 100%; /* doesn't do the whole column otherwise */
+  background-color:  rgb(255, 255, 255);
+}
+
+.infotable td:first-child { 
+  font-weight: 300;
+}
+
+
+p.infotext {
+  background-color: rgb(255, 255, 255);
+  padding: 24px;
+  padding-top: 0px;
+}
+
+.end{
+  background-color: rgb(228, 2, 2);
+  font-size:  50px;
+  font-weight: 300;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
