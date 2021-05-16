@@ -24,7 +24,6 @@ body {
 }
 
 .cardtitle{
-  
   background-image: linear-gradient(to right, #ccc, #f676c1, #ccc);
   font-size: 40px;
   text-transform: uppercase;
@@ -83,6 +82,7 @@ body {
 }
 
 .cardpicbox{
+  background-color: #8d0d67;
   padding: 24px;
   background-image: url("img/Background.png");
   background-size: cover; /* background as big as cardpicbox */
@@ -102,41 +102,40 @@ body {
 }
 
 .infobox{
-  background-color: rgb(117, 51, 51);
   font-size:  15px;
   font-family: 'RocknRoll One', sans-serif;
   padding: 24px;
-  background-image: url("img/Background.png");
+  background-image: url("img/Backgroundupsidedown.png");
   background-size: cover; 
   background-position: 50% 50%; 
 }
 .infotable {
-  padding: 24px;
+  padding: 12px;
   background-color: #ccc;
+  margin-bottom: 24px;
 }
 .infotable table { /* table is seen as a html tag like "body" or "HTML" */
   width: 100%; /* doesn't do the whole column otherwise */
   background-color:  #ccc;
+  font-size: 18.75px;
 }
 .infotable td:first-child { 
-  text-transform: uppercase;
   color: black;
+  /* text-transform:uppercase; to make text capitalized, no need now bc japanese */
 }
-
 p.infotext {
   background-color: #ccc;
-  padding: 24px;
-  padding-top: 0px;
+  padding: 12px; 
 }
 
 .end{
   background-image: linear-gradient(to right, #ccc, #f676c1, #ccc);
   display:flex;
-  height: 48px;
+  height: 30px;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 @keyframes lineanimation {
   from {background-image: linear-gradient(to right, #ccc, #8d0d67, #ccc)}
