@@ -18,7 +18,6 @@ body {
   padding: 10px; 
   /* background-color just here to make the card visible, can be changed JS */
   background-color: #8d0d67;
-
   /* makes the appearance look more like a card, up to you to change JS*/
   border-radius: 10px;
 }
